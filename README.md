@@ -1,69 +1,68 @@
-# 🥊 SLAP MY ENEMY
+# 🥊 SLAP MY ENEMY: BANGLADESH EDITION
 ## AI-Powered Virtual Stress Relief & Interactive Character Simulator
 
-> Transform your daily frustrations into an entertaining, fictional, cartoon 3D game avatar and interact inside a real-time virtual colosseum.
+> **🌐 LIVE DEMO LINK: [https://mahbub203.github.io/slap-my-enemy/](https://mahbub203.github.io/slap-my-enemy/)**  
+> **🎮 PLAY DIRECTLY IN YOUR BROWSER NOW: [https://mahbub203.github.io/slap-my-enemy/](https://mahbub203.github.io/slap-my-enemy/)**
+
+[![Live Demo](https://img.shields.io/badge/PLAY_NOW-LIVE_DEMO-success?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mahbub203.github.io/slap-my-enemy/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?style=for-the-badge&logo=github)](https://mahbub203.github.io/slap-my-enemy/)
+[![License](https://img.shields.io/badge/license-MIT-purple?style=for-the-badge)](LICENSE)
 
 ---
 
 ## 🌟 Key Features
 
-### 1. Photo Upload & Customization System
-- **Supported Formats:** JPG, JPEG, PNG, and WEBP.
-- **Drag-and-Drop Uploader:** Intuitive drag-and-drop or file picker with client and server validation (max 10MB).
-- **Interactive Image Editor:** Rotate 90°, flip horizontally, adjust brightness, contrast, and saturation, with circular avatar preview guides.
-- **Preset Rivals:** Immediate 1-click test characters ("Grumpy Boss", "Toxic Teammate", "Monday Alarm") for users who prefer not to upload photos.
-- **Explicit Consent Mandate:** Explicit consent checkbox required prior to avatar generation.
+### 1. 🎨 Full 2D Interactive Cartoon Arena (Primary Mode)
+- **100% Crystal Clear Face:** Uploaded photos render at native high-DPI resolution without 3D geometric clipping, washouts, or distortion.
+- **Guaranteed Headroom:** Generous top clearance ensuring HUD elements and reaction banners never obstruct the face or head.
+- **Full Stylized Human Body:** Complete Bangladeshi attire with Panjabi/shirt, collar, golden buttons, belt, trousers, and modern sneakers.
+- **Dynamic Ragdoll Spring Physics:** Head snap recoil, torso flinches, stumbling balance, and comical hit marks.
 
-### 2. Stylized AI Character Generation
-- **5 Fictional Game Aesthetics:**
-  1. **Cartoon 3D:** Pixar/Dreamworks style with warm glossy lighting and soft curves.
-  2. **Funny Caricature:** Comedic center-bulge magnification, exaggerated expressions, and rosy blush.
-  3. **16-Bit Pixel Art:** Chunky retro arcade fighter aesthetic with quantized color palettes.
-  4. **Comic Book Pop-Art:** Bold ink outlines, high-contrast shadows, and Ben-Day pop dots.
-  5. **Low-Poly Game:** Modern indie polygon mesh facets with sharp faceted shading.
-- **Dual Engine Architecture:**
-  - **Modular Cloud AI:** Integrated with Google GenAI SDK (`google-genai`).
-  - **Offline Algorithmic Caricature Engine:** Instant, 100% resilient fallback using HTML5 Canvas & Python Pillow pixel filters. Never fails even without API keys!
-- **Ethical Safeguards:** Generates strictly fictional cartoon game avatars; does not produce realistic deepfakes or real-world photographs.
+### 2. 🚶‍♂️ Living Dhaka Street & Bangladesh Environments
+- **6 Authentic Bangladesh Scenarios:**
+  1. **Dhaka City Street (ঢাকার রাস্তা):** Asphalt road, zebra crossing, cycle rickshaw, tong tea stall with animated rising steam particles.
+  2. **Bangladeshi Village (সবুজ গ্রামবাংলা):** Mud courtyard, tin-roof hut, swaying coconut palms, and duck pond.
+  3. **University Campus (বিশ্ববিদ্যালয় ক্যাম্পাস):** Curzon Hall-style colonial red-brick pillars, paved walkways, and benches.
+  4. **Local Bazar (লোকাল কাঁচাবাজার):** Vegetable crates, colorful awnings, and market atmosphere.
+  5. **Dhaka Rooftop (ঢাকার ছাদ ও গোধূলি):** Terracotta tiles, Gazi black water tank, clotheslines with drying lungi.
+  6. **Eid Festival (ঈদ উৎসব ও মেলা):** Fairground stage, illuminated golden crescent moon, and animated fairy lights.
+- **Animated 2D Pedestrians (মানুষের হাঁটাচলা):** Continuous natural walk cycles for elder in Panjabi/Lungi, youth in jeans/t-shirt, and shoppers carrying bazaar bags.
+- **Moving Dhaka Green CNG Auto-Rickshaw:** Classic green baby taxi driving across the street with spinning wheels and headlight beams.
 
-### 3. Interactive 3D Virtual Colosseum
-- **Three.js Powered Arena:** Cyberpunk lighting, neon stage rings, overhead spotlight, soft shadows, and floating energy pillars.
-- **Articulated Humanoid Model:** Head, neck, chest, shoulders, arms, hands, legs, and feet with joint animations.
-- **Dynamic Face Texturing:** Real-time face projection with expression states (*neutral*, *shocked*, *dizzy*, *funny_smile*, *crying_laugh*).
-- **Camera Controls:** Orbit and tilt controls with mouse drag, touch gestures, and double-click auto-centering.
-
-### 4. 7 Non-Graphic Entertainment Actions
-| # | Action | Hotkey | VFX & Physics | Audio Effect |
+### 3. 🥊 First-Person Player Visual Attacks ("নিজের মার দেখা যাবে")
+| # | Action | Hotkey | Player Attack Animation | Reaction VFX |
 |---|---|---|---|---|
-| 1 | **SLAP** | `1` | Head whip sideways, spring recoil, hit sparks | Crisp smack transient |
-| 2 | **PUNCH** | `2` | Heavy backward knockback, screen shake, comic sparks | Deep sub-bass boom & crunch |
-| 3 | **PUSH** | `3` | Backward heel stumble, windmilling arms | Gusting air swoosh |
-| 4 | **THROW A TOMATO** | `4` | 3D tomato projectile in parabolic arc, 40 red splash particles, facial splat decal | Wet squelch & squish |
-| 5 | **WATER SPLASH** | `5` | Water spray blast, sparkling blue droplets, dog-like head shimmy | Bubbly water splash |
-| 6 | **TICKLE** | `6` | Jittering giggle vibration, floating sparkles | Playful high-pitch arpeggio |
-| 7 | **RESET** | `R` / `7` | 360° victory jump spin, clears all decals & dizziness | Rising reset chime |
+| 1 | **SLAP (থাপ্পড়)** | `1` / Swipe H | Giant 3D/2D player hand swooshes in from the side with wind trails | Cheek whip recoil, red handprint imprint, "চড়! SLAP!" comic starburst |
+| 2 | **PUNCH (ঘুষি)** | `2` / Swipe V | Massive boxing glove thrusts forward from camera center | Heavy recoil, comic bump, band-aid, "ঘুষি! POW!" |
+| 3 | **PUSH (ধাক্কা)** | `3` | Two player hands thrust forward together | Full-body stumble onto heels, "ধাক্কা! PUSH!" |
+| 4 | **TOMATO (টমেটো)** | `4` | Player hand throws ripe tomato in a 3D arc | Splats on face with dripping red sauce, "টমেটো! SPLAT!" |
+| 5 | **WATER (পানি)** | `5` | Water blaster nozzle sprays high-pressure water jet | Sparkling droplets, shivering wet dog shake, "পানি! SPLASH!" |
+| 6 | **TICKLE (সুরসুরি)** | `6` | Two cartoon hands wiggle fingers on ribs | Hysterical laughter vibration, sparkles, "সুরসুরি! HEHE!" |
+| 7 | **RESET (রিসেট)** | `R` | Golden aura bursts, clears all decals | Returns character to pristine idle pose |
 
-### 5. Game Mechanics & Sound
-- **Web Audio Procedural Synthesizer:** Zero external audio file dependencies; zero missing asset 404s or network lag. Includes an optional background arena synth-groove beat.
-- **Dynamic Combo System:** Streak multiplier up to 5x with combo timer and chimes.
-- **Stress Relief Progress Meter:** Visual indicator from 0% to 100% stress relief.
-- **7 Unlockable Badges:** First Strike, Combo Maestro, Tomato Toss Master, Hydro Cannon, Tickle Tactician, Stress Free Zone, Relentless Reliever.
-- **Humorous Reaction Messages:** Over 25 context-aware comic reactions from the character.
-- **Direct Swipe Gestures:** Swipe horizontally to slap, swipe vertically to punch!
+### 4. 🌐 Multilingual Engine
+- **3 Modes:** বাংলা (Bangla - Default), Banglish, English.
+- Custom typography: *Noto Sans Bengali*, *Hind Siliguri*, and *Inter*.
+- Over 100 context-aware Bangladeshi humorous quips and dialogue reactions.
 
-### 6. Privacy & Security
-- **Temporary Sessions:** Media files are isolated by session ID.
-- **One-Click Deletion:** "Delete Session & Avatar Data" wipes all files from the server disk and local storage immediately.
-- **No Third-Party Tracking:** Photos are never published, shared, or indexed.
+### 5. 🔊 Procedural Web Audio Engine
+- Synthesizer generated hits, combo chimes, and celebration fanfare without external MP3 dependencies.
+- 6 Authentic Bangladeshi ambient soundscapes:
+  - Rickshaw bell *"Tung-Tung"* & street traffic hum.
+  - Village birdsong & gentle breeze.
+  - University cafeteria banter & acoustic adda chords.
+  - Vegetable vendor calls & market chatter.
+  - Rooftop twilight breeze.
+  - Eid festive melodies.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS v4, Three.js, Zustand, Lucide Icons, Canvas Confetti.
+- **Frontend:** React 19, TypeScript, Vite, Tailwind CSS v4, Three.js, HTML5 2D Canvas, Zustand, Lucide Icons, Canvas Confetti.
 - **Backend:** Python 3.11+, Django 6.1+, Django REST Framework, Django CORS Headers, Pillow, python-dotenv, Google GenAI SDK (`google-genai`).
-- **Database:** SQLite (default for development), PostgreSQL-ready.
-- **Deployment:** Docker & Docker Compose.
+- **Database:** SQLite (local development), PostgreSQL ready.
+- **Hosting / Deployment:** GitHub Pages (Live Frontend), Docker & Docker Compose.
 
 ---
 
@@ -82,38 +81,21 @@ npm run dev
 *(Or on Windows, simply double-click `run.bat` or run `.\start-all.ps1`).*
 
 This concurrently starts:
-- **Backend API:** `http://127.0.0.1:8000` (Django REST Framework)
 - **Frontend App:** `http://localhost:5173` (Vite + React)
+- **Backend API:** `http://127.0.0.1:8000/api/` (Django REST Framework)
 - Automatic proxy forwarding from `http://localhost:5173/api/` to `http://127.0.0.1:8000/api/`
-
----
-
-### 2. Running Individual Services (Optional)
-
-#### Frontend Only
-```bash
-npm run dev:frontend
-```
-
-#### Backend Only
-```bash
-npm run dev:backend
-```
 
 ---
 
 ## 🧪 Testing
 
 ### Backend Unit Tests
-Run the Django test suite covering image validation, 5 character styles, consent enforcement, healthcheck, and disk deletion:
 ```bash
-cd backend
-python manage.py test game_api
+python backend/manage.py test game_api
 ```
-*(Expected output: 7 passed tests in < 1 second).*
+*(Expected output: 8/8 tests passed in < 0.4s).*
 
-### Frontend Build Verification
-Verify TypeScript compilation and production bundling:
+### Frontend Production Build
 ```bash
 cd frontend
 npm run build
@@ -121,31 +103,7 @@ npm run build
 
 ---
 
-## 🐳 Docker Deployment
-
-To build and run the entire stack with Docker Compose:
-```bash
-docker-compose up --build
-```
-- Frontend: `http://localhost:3000`
-- Backend API: `http://localhost:8000`
-
----
-
-## 📡 API Endpoints Reference
-
-| Method | Endpoint | Description |
-|---|---|---|
-| `GET` | `/api/health/` | Health check & AI mode detection |
-| `POST` | `/api/characters/generate/` | Upload photo & generate stylized 3D avatar |
-| `GET` | `/api/characters/<uuid:id>/` | Fetch character configuration |
-| `DELETE` | `/api/characters/<uuid:id>/` | Permanently delete character & wipe media from disk |
-| `POST` | `/api/characters/cleanup-session/` | Delete all avatars associated with a session ID |
-| `POST` | `/api/sessions/update-stats/` | Update score, max combo, and total hits |
-
----
-
 ## ⚖️ Safety & Ethical Guidelines
-- **Fictional avataring only:** The system deliberately prevents the generation of photorealistic deepfakes.
-- **Non-graphic entertainment:** No realistic injuries, blood, or real-world threats.
-- **Consent-first:** Character generation is blocked unless the user explicitly checks the consent agreement.
+- **Fictional avatars only:** Designed strictly for humorous entertainment and virtual stress relief.
+- **Non-graphic cartoon action:** No blood, realistic violence, or real-world threats.
+- **Privacy First:** Uploaded images can be instantly wiped with the "Privacy Data Wipe" button.
