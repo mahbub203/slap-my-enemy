@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #07080e;
+    --bg-card: rgba(15, 16, 26, 0.85);
+    --border-glow: rgba(168, 85, 247, 0.35);
+    --accent-purple: #9333ea;
+    --accent-red: #ef4444;
+    --accent-cyan: #06b6d4;
+    --accent-yellow: #eab308;
+    --accent-green: #10b981;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: #f3f4f6;
+    font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #090a12;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+  }
+}
+
+.font-bangla {
+  font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+}
+
+.font-english {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.glass-panel {
+  background: rgba(15, 16, 26, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+}
+
+.glass-panel-glow {
+  background: rgba(18, 16, 32, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.25), inset 0 0 15px rgba(168, 85, 247, 0.08);
+}
+
+.text-glow-red {
+  text-shadow: 0 0 16px rgba(239, 68, 68, 0.8);
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 18px rgba(168, 85, 247, 0.85);
+}
+
+.text-glow-yellow {
+  text-shadow: 0 0 14px rgba(234, 179, 8, 0.85);
+}
+
+.text-glow-green {
+  text-shadow: 0 0 14px rgba(16, 185, 129, 0.8);
+}
+
+.btn-action {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-action:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.btn-action:active {
+  transform: translateY(1px) scale(0.97);
+}
+
+@keyframes float-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.6);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.2);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-40px) scale(1.0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-70px) scale(0.8);
+  }
+}
+
+.animate-float-pop {
+  animation: float-pop 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes screen-shake {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(-5px, 4px) rotate(-1.2deg); }
+  40% { transform: translate(6px, -4px) rotate(1.8deg); }
+  60% { transform: translate(-4px, -3px) rotate(-0.8deg); }
+  80% { transform: translate(3px, 4px) rotate(1deg); }
+}
+
+.screen-shake {
+  animation: screen-shake 0.3s ease-in-out;
+}
