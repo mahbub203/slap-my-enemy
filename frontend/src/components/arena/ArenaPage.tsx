@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useGameStore } from '../../store/gameStore';
 import { useSettingsStore } from '../../store/settingsStore';
+import { Arena2DCanvas } from './Arena2DCanvas';
 import { Arena3DCanvas } from './Arena3DCanvas';
 import { ScoreboardHUD } from './ScoreboardHUD';
 import { ActionControls } from './ActionControls';
@@ -20,7 +21,7 @@ export const ArenaPage: React.FC = () => {
     stressReliefLevel 
   } = useGameStore();
 
-  const { screenShakeEnabled, hasSeenTutorial } = useSettingsStore();
+  const { screenShakeEnabled, hasSeenTutorial, viewMode = '2d' } = useSettingsStore();
 
   const [isSettingsOpen, setIsSettingsOpen] = useState<boolean>(false);
   const [isAchievementsOpen, setIsAchievementsOpen] = useState<boolean>(false);
@@ -44,8 +45,8 @@ export const ArenaPage: React.FC = () => {
     <div className={`relative w-full h-screen overflow-hidden select-none bg-[#07080e] ${
       isScreenShaking && screenShakeEnabled ? 'screen-shake' : ''
     }`}>
-      {/* 3D Canvas Viewport */}
-      <Arena3DCanvas />
+      {/* Interactive Viewport (Default 2D Cartoon or 3D Arena) */}
+      {viewMode === '2d' ? <Arena2DCanvas /> : <Arena3DCanvas />}
 
       {/* Top HUD */}
       <ScoreboardHUD

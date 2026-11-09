@@ -104,6 +104,7 @@ export interface GameSettings {
   cameraTiltEnabled: boolean;
   consentAccepted: boolean;
   hasSeenTutorial: boolean;
+  viewMode?: '2d' | '3d';
 }
 
 export interface GameStats {

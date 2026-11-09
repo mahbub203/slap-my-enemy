@@ -53,7 +53,9 @@ export const ScoreboardHUD: React.FC<ScoreboardHUDProps> = ({
     language,
     setLanguage,
     soundEnabled, 
-    setSoundEnabled
+    setSoundEnabled,
+    viewMode = '2d',
+    setViewMode
   } = useSettingsStore();
 
   const { t } = useTranslation();
@@ -125,22 +127,39 @@ export const ScoreboardHUD: React.FC<ScoreboardHUDProps> = ({
           </button>
         </div>
 
-        {/* Center: Language Switcher Pill */}
-        <div className="flex items-center gap-1 p-1 rounded-xl glass-panel border border-white/10 pointer-events-auto mx-auto sm:mx-0">
-          {LANGUAGE_OPTIONS.map((opt) => (
-            <button
-              key={opt.code}
-              type="button"
-              onClick={() => setLanguage(opt.code as LanguageCode)}
-              className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
-                language === opt.code
-                  ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-md'
-                  : 'text-slate-400 hover:text-white'
-              }`}
-            >
-              {opt.label}
-            </button>
-          ))}
+        {/* Center: Language Switcher & 2D/3D Mode Pill */}
+        <div className="flex items-center gap-1.5 pointer-events-auto mx-auto sm:mx-0">
+          <div className="flex items-center gap-1 p-1 rounded-xl glass-panel border border-white/10">
+            {LANGUAGE_OPTIONS.map((opt) => (
+              <button
+                key={opt.code}
+                type="button"
+                onClick={() => setLanguage(opt.code as LanguageCode)}
+                className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all ${
+                  language === opt.code
+                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-md'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
+          </div>
+
+          {/* 2D / 3D Mode Toggle Pill */}
+          <button
+            type="button"
+            onClick={() => setViewMode(viewMode === '2d' ? '3d' : '2d')}
+            className={`px-2.5 py-1 rounded-xl text-xs font-black border backdrop-blur-md transition-all shadow-md flex items-center gap-1.5 ${
+              viewMode === '2d'
+                ? 'bg-gradient-to-r from-emerald-600 to-teal-600 text-white border-emerald-400/50 shadow-emerald-950/40'
+                : 'bg-purple-900/80 text-purple-200 border-purple-500/40'
+            }`}
+            title="Toggle between 2D Cartoon and 3D Arena"
+          >
+            <span className="text-sm">{viewMode === '2d' ? '🎨' : '🎮'}</span>
+            <span>{viewMode === '2d' ? 'FULL 2D' : '3D MODE'}</span>
+          </button>
         </div>
 
         {/* Right: Quick Action Stats, Summary, Tutorial & Settings */}

@@ -16,6 +16,7 @@ interface SettingsStore extends GameSettings {
   setCameraTiltEnabled: (enabled: boolean) => void;
   setConsentAccepted: (accepted: boolean) => void;
   setHasSeenTutorial: (seen: boolean) => void;
+  setViewMode: (mode: '2d' | '3d') => void;
   resetSettings: () => void;
 }
 
@@ -33,6 +34,7 @@ const DEFAULT_SETTINGS: GameSettings = {
   cameraTiltEnabled: true,
   consentAccepted: false,
   hasSeenTutorial: false,
+  viewMode: '2d', // Default: Full 2D interactive cartoon mode!
 };
 
 const loadPersistedSettings = (): GameSettings => {
@@ -121,6 +123,11 @@ export const useSettingsStore = create<SettingsStore>((set, get) => ({
   setHasSeenTutorial: (hasSeenTutorial) => {
     set({ hasSeenTutorial });
     localStorage.setItem('sme_bd_settings', JSON.stringify({ ...get(), hasSeenTutorial }));
+  },
+
+  setViewMode: (viewMode) => {
+    set({ viewMode });
+    localStorage.setItem('sme_bd_settings', JSON.stringify({ ...get(), viewMode }));
   },
 
   resetSettings: () => {
